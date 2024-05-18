@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rock Paper Scrissors</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <p id="score">0 - 0</p>
+        <div class="rps-field">
+            <img class="rps-pick" id="user-choice" src="assets/rock.png" width="200px" height="200px" alt="User's choice">
+            <img class="rps-pick" id="computer-choice" src="assets/rock.png" width="200px" height="200px" alt="Computer's choice">
+        </div>
+        <div class="buttons">
+            <button class="rps-button" name="rock" onclick="userDidSelect(0);">
+                <img src="assets/rock-button.png" width="200px" height="200px" alt="Choose Rock">
+            </button>
+            <button class="rps-button" name="paper" onclick="userDidSelect(1);">
+                <img src="assets/paper-button.png" width="200px" height="200px" alt="Choose Paper">
+            </button>
+            <button class="rps-button" name="scrissors" onclick="userDidSelect(2);">
+                <img src="assets/scrissors-button.png" width="200px" height="200px" alt="Choose Scrissors">
+            </button>
+        </div>
+    </body>
+</html>
